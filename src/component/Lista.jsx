@@ -8,7 +8,7 @@ import ListItemText from "@mui/material/ListItemText";
 export default function Lista({listCharacters}) {
   return (
     <List sx={{ width: "100%", maxWidth: 360, bgcolor: "background.paper" }}>
-      
+      <ListItem>List:</ListItem>
         {
           listCharacters.length > 1 ? listCharacters.map((c)=>{
             return (

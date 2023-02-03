@@ -12,7 +12,12 @@ export default function Home({ allCharacters }) {
   });
   const [listCharacters, setList] = useState([]);
   const addList = function () {
-    setList(allCharacters);
+    if(listCharacters.length ===0){
+     setList(allCharacters); 
+    } else {
+      setList([])
+    }
+    
   };
   const random = function (cardLocation) {
     function getRandomInt(max) {
@@ -43,8 +48,10 @@ export default function Home({ allCharacters }) {
       <NavBar searchName={search} addList={addList} random={random} />
       <h3>Star Wars Battle!!!</h3>
       <Cards characters={characters} />
+      <br></br>
+      <div className="lista">
       <Lista listCharacters={listCharacters} />
-      <div></div>
+      </div>
     </div>
   );
 }
