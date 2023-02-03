@@ -1,70 +1,47 @@
-# Getting Started with Create React App
+# Star Wars Battle App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Steps 
 
-## Available Scripts
+01. El title de la app debe ser: Star Wars Battle App
+02. Debe contener un componente Home
+03. El componente Home debe contener un NavBar, un Cards y un List
+04. El componente Cards debe estar dividido en dos y contiene en cada división el componente Card 
+05. El componente Card es un slide que muestra y oculta una card que contiene al menos 6 atributos del character, entre estos deben estar si o sí: image, name e id
+06. El componente List se debe encontrar por debajo del componente cards
 
-In the project directory, you can run:
+## Tareas
 
-### `npm start`
+01. Crear Random que es un botón selector random de un personaje de star wars
+02. Crear Search que es un buscador y selector por nombre de un personaje de star wars
+03. Crear AllCharacters que es un botón que nos trae y muestra en el componente List el nombre de todos los personajes de nuestra API
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Importante
+Recuerda de reutilizar componentes de ser necesario (no repetir código)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
+### Material
+-   React con: npx create-react-app <nameapp>
+-   Estilos con CSS, Material IU, Bootstrap, o cualquier librería a fin. Este trabajo pretende centralizarse en la implementación de React, la aplicación y manipulación de datos desde una api externa y el sentido lógico para desarrollar nuestras funciones.
+-   API https://github.com/akabab/starwars-api 
+Siendo el único endpoint el siguiente: https://akabab.github.io/starwars-api/api/all.json
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Time aprox. 
+```
+25´  -> Armar estructura de árbol de componentes sin diseño 
+20´  -> Diseño básico
+15´  -> codeo, investigar data y conectar la data api a nuestra app usando axios 
+30´  -> en lógica del search
+30´  -> mejorando diseño
+30´  -> lógica de random 
+10´  -> llevando todas las cards a la list 
+30´  -> re-factorizando
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+3 horas aprox.
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-### `npm run eject`
+### Extras
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+-   Conseguir que nunca coincidan las cards de la derecha con la izquierda en un mismo momento
