@@ -1,12 +1,4 @@
-# Desafío técnico: Frontend Software Engineering
-
-## Star Wars Battle App
-
-
-
-Bienvenido a su desafío técnico!
-
-Este desafío es para validar tu habilidad como Frontend Software Engineering y tiene un tiempo estimado de finalización de 24hs. 
+# Star Wars Battle App
 
 ## Steps 
 
@@ -24,9 +16,7 @@ Este desafío es para validar tu habilidad como Frontend Software Engineering y 
 03. Crear AllCharacters que es un botón que nos trae y muestra en el componente List el nombre de todos los personajes de nuestra API
 
 ## Importante
--   Recuerda de reutilizar componentes de ser necesario (no repetir código)
--   Uso adecuado de git. Por favor, no subas tu proyecto a GitHub con solo una confirmación; nosotros
-queremos ver cómo usa GitHub y cómo documentas cada cambio en su código.
+Recuerda de reutilizar componentes de ser necesario (no repetir código)
 
 
 ### Material
@@ -36,6 +26,22 @@ queremos ver cómo usa GitHub y cómo documentas cada cambio en su código.
 Siendo el único endpoint el siguiente: https://akabab.github.io/starwars-api/api/all.json
 
 
+
+### Time aprox. 
+```
+25´  -> Armar estructura de árbol de componentes sin diseño 
+20´  -> Diseño básico
+15´  -> codeo, investigar data y conectar la data api a nuestra app usando axios 
+30´  -> en lógica del search
+30´  -> mejorando diseño
+30´  -> lógica de random 
+10´  -> llevando todas las cards a la list 
+30´  -> re-factorizando
+
+3 horas aprox.
+```
+
+
 ### Extras
 
--   No permitir que en una misma vista se enfrente el mismo personaje (que aparezca en ambos componentes) a la hora de buscar o seleccionar uno random.
+-   Conseguir que nunca coincidan las cards de la derecha con la izquierda en un mismo momento
